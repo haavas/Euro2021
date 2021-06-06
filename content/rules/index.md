@@ -4,3 +4,5 @@ outputs:
 - HTML
 type: wowchemycms
 ---
+
+Test this page here.
