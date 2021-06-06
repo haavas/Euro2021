@@ -14,3 +14,6 @@ advanced:
 ---
 
 Welcome to the STV2021 Competiton!
+
+This page will be updated with the standings in the competiton as games progress. Scroll down for the results.
+
