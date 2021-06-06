@@ -1,0 +1,31 @@
+---
+title: 'En testoppdatering '
+author: HS
+date: '2021-06-06'
+slug: en-testoppdatering
+categories:
+  - R
+tags:
+  - Euro2021
+subtitle: ''
+summary: ''
+authors: []
+lastmod: '2021-06-06T22:42:30+02:00'
+featured: no
+image:
+  caption: ''
+  focal_point: ''
+  preview_only: no
+projects: []
+---
+
+# Tekst
+
+```{r}
+1+1
+```
+
+
+
+er 1+1 lik 2?
+
