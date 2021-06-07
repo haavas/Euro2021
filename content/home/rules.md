@@ -65,7 +65,7 @@ The grey cells in group stage games 25 thorugh 36 and in the knockout rounds are
 
 * Points are earned for guessing the correct outcome of each of the games in the group stage. Each correct answer is worth 25 points, for a total of 900 points
 
-* Points are _deducted_ for any deviance between the predicted and observed scores. As usual in the Social Sciences, we square the deviance. If the first game is predicted a 2-0 Turkey victory over Italy but ends in a 4-1 Turkish victory, then 25 points are awarded for the correct outcome, before (4-2)<sup>2</sup>=2<sup>2</sup>=4 and (1-0)<sup>2</sup>=1<sup>2</sup>=1 points are deducted for slightly missing the correct result. In the end, 25 - 4 - 1 = 20 points are awarded.
+* Points are _deducted_ for any deviance between the predicted and observed scores. As usual in the Social Sciences, we square the deviance. If the first game is predicted a 2-0 Turkey victory over Italy but ends in a 4-1 Turkish victory, then 25 points are awarded for the correct outcome, before (4-2)<sup>2</sup>=2<sup>2</sup>=4 and (1-0)<sup>2</sup>=1<sup>2</sup>=1 points are deducted for slightly missing the correct result. In the end, 25 - 4 - 1 = 20 points are awarded. 
 
 * Points are earned in the the knockout round for guessing the correct teams in each of the knockout stages. 25 points are awarded for each correct team, and a bonus 5 points if the team appears on the correct spot in the playoff schedule. 
 
