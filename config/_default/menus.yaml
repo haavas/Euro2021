@@ -8,7 +8,4 @@ main:
     url: '#posts'
   - name: Rules
     url: '#rules'
-  - name: Courses
-    url: courses/
-    weight: 60
 
