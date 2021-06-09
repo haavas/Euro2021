@@ -1,5 +1,5 @@
 ---
-title: 'En testoppdatering '
+title: 'Welcome'
 author: HS
 date: '2021-06-06'
 slug: en-testoppdatering
@@ -19,13 +19,12 @@ image:
 projects: []
 ---
 
-# Tekst
+# Welcome to the STV Euro2021 competiton
 
-```{r}
-1+1
-```
+This blog will serve updates throughout the competition. I hope to be able to post an update after every day. The main difference this year is that updates will be posted as new posts rather than updating the increasingly long single page. 
 
+There will also be a discussion thread at the bottom of each page.
 
+Three years ago, Ida won what was a very close race almost to the end. We had a total of 25 participants, which all did above average. 
 
-er 1+1 lik 2?
-
+![WC2018 Scoreboard](WC2018.png)
