@@ -1,0 +1,40 @@
+---
+title: Status Thursday at noon
+author: HS
+date: '2021-06-10'
+slug: status-thursday-at-noon
+categories:
+  - R
+tags:
+  - Euro2021
+subtitle: ''
+summary: ''
+authors: []
+lastmod: '2021-06-10T12:41:21+02:00'
+featured: no
+image:
+  caption: ''
+  focal_point: ''
+  preview_only: no
+projects: []
+---
+
+At the time of writing seven predictions have been submitted. It is very early, but so far Philipp seems to be voicing the wisdom of the Covid-friendly crowd.
+
+```{r intro, echo=FALSE, message=FALSE , warning=FALSE}
+
+library(tidyverse)
+library(igraph)
+
+cormat <- tbl_df(read.csv("cormat.csv", sep=";", header = FALSE, stringsAsFactors=FALSE))
+
+cormat$V4 <- ifelse(cormat$V3 > 0.55, 1, 0)
+
+cormat <- rename(cormat, "Korr" = "V3")
+
+el <- cormat %>% filter(V4 == 1) %>% filter(V1 != V2)
+el <- el[1:2]
+
+plot.igraph(graph.edgelist(as.matrix(el)), layout = layout_with_fr(graph.edgelist(as.matrix(el))), vertex.label.cex=2)
+
+```

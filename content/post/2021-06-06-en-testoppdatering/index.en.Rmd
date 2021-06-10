@@ -29,21 +29,3 @@ Three years ago, Ida won what was a very close race almost to the end. We had a 
 
 ![WC2018 Scoreboard](WC2018.png)
 
-
-```{r intro, echo=FALSE, message=FALSE , warning=FALSE}
-
-library(tidyverse)
-library(igraph)
-
-cormat <- tbl_df(read.csv("..\\csv\\cormat.csv", sep=";", header = FALSE, stringsAsFactors=FALSE))
-
-cormat$V4 <- ifelse(cormat$V3 > 0.55, 1, 0)
-
-cormat <- rename(cormat, "Korr" = "V3")
-
-el <- cormat %>% filter(V4 == 1) %>% filter(V1 != V2)
-el <- el[1:2]
-
-plot.igraph(graph.edgelist(as.matrix(el)), layout = layout_with_fr(graph.edgelist(as.matrix(el))), vertex.label.cex=2)
-
-```
