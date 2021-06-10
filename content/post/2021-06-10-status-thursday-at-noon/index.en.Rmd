@@ -35,6 +35,6 @@ cormat <- rename(cormat, "Korr" = "V3")
 el <- cormat %>% filter(V4 == 1) %>% filter(V1 != V2)
 el <- el[1:2]
 
-plot.igraph(graph.edgelist(as.matrix(el)), layout = layout_with_fr(graph.edgelist(as.matrix(el))), vertex.label.cex=1, edge.arrow.size=0)
+plot.igraph(graph.edgelist(as.matrix(el)), layout = layout_with_fr(graph.edgelist(as.matrix(el))), vertex.label.cex=1, edge.arrow.size=0) 
 
 ```
