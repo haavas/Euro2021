@@ -67,11 +67,11 @@ The grey cells in group stage games 25 thorugh 36 and in the knockout rounds are
 
 * Points are _deducted_ for any deviance between the predicted and observed scores. As usual in the Social Sciences, we square the deviance. If the first game is predicted a 2-0 Turkey victory over Italy but ends in a 4-1 Turkish victory, then 25 points are awarded for the correct outcome, before (4-2)<sup>2</sup>=2<sup>2</sup>=4 and (1-0)<sup>2</sup>=1<sup>2</sup>=1 points are deducted for slightly missing the correct result. In the end, 25 - 4 - 1 = 20 points are awarded. 
 
-* Points are earned in the the knockout round for guessing the correct teams in each of the knockout stages. 25 points are awarded for each correct team, and a bonus 5 points if the team appears on the correct spot in the playoff schedule. 
+* Points are earned in the the knockout round for guessing the correct teams in each of the knockout stages. 25 points are awarded for each correct team, and a bonus 5 points if the team appears on the correct spot in the playoff schedule. Correctly guessing both teams in a knockout game will thus give (25 + 5) * 2 = 60 points. With 15 knockout games, the total points available is 900.
 
 * Finally, 200 points are awarded for correctly guessing the winner of the Euro2021 cup. 
 
-The theoretical top score is therefore 2000 points.
+The theoretical top score is therefore 2450 points.
 
 # Changes from 2018
 
