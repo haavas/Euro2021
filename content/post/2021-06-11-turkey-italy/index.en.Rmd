@@ -1,0 +1,67 @@
+---
+title: Turkey - Italy
+author: HS
+date: '2021-06-11'
+slug: turkey-italy
+categories:
+  - Game
+tags: []
+subtitle: ''
+summary: ''
+authors: []
+lastmod: '2021-06-11T21:28:03+02:00'
+featured: no
+image:
+  caption: ''
+  focal_point: ''
+  preview_only: no
+projects: []
+---
+
+```{r init, echo=FALSE, message=FALSE , warning=FALSE}
+
+library(tidyverse)
+library(igraph)
+library(readxl)
+library(knitr)
+
+knitr::opts_chunk$set(out.width = "100%")
+
+```
+
+Italy beat Turkey in an uninspired game, as opening games often are. Interesting to note that the referee had a very liberal take on  the laws of the game. No penalties, no yellow cards until the 80th minute. If this is the new standard, then Marina's prediction of 150 yellow cards may prove correct.
+
+Turkey was poor in every respect, and as such it is hard to say how good Italy were. We will find out. 
+
+```{r graph, echo = FALSE, warning=FALSE}
+
+nettverk <- read.csv("res1.csv", sep = ";", header = FALSE )
+
+leaderboard <- tibble::as_tibble(nettverk)
+
+leaderboard <- leaderboard %>% arrange_at(ncol(.), desc)
+
+hbar<-leaderboard 
+hbar$f<-0
+colnames(hbar) <- c("x", "y", "f")
+hbar$diff<-hbar$y-hbar$f
+
+ggplot(hbar, aes(x=reorder(x, y), y=y, fill = diff )) + 
+    geom_bar(stat = 'identity') + 
+    scale_y_continuous(limits = c(-5, 55)) +
+    coord_flip() + 
+    scale_fill_gradient2(low = "red", high="blue") +
+    geom_text(aes(label = y), hjust=-0.75, size = 5 ) + 
+    ylab("Points") +
+    xlab(" ") +
+    theme(axis.text=element_text(size=18), axis.title=element_text(size=18,face="bold"))
+
+```
+The graph looks kind of brutal, for some, but this will look very differntly tomorrow. The score is a combination of points from the game and the 30 points from the first question.
+
+
+# Who scored the first goal?
+
+Italy.
+
+Yes, technically speaking, the first goal was an own goal, and an argument can be made that Turkey as such did score the first goal. But we all know that the correct answer here is Italy. A decision has been made and points have been awarded.
