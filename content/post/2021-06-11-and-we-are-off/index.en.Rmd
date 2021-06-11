@@ -1,0 +1,116 @@
+---
+title: And we are off!
+author: HS
+date: '2021-06-11'
+slug: and-we-are-off
+categories:
+  - Descriptives
+tags:
+  - Euro2021
+subtitle: ''
+summary: ''
+authors: []
+lastmod: '2021-06-11T11:27:30+02:00'
+featured: no
+image:
+  caption: ''
+  focal_point: ''
+  preview_only: no
+projects: []
+---
+
+```{r init, echo=FALSE, message=FALSE , warning=FALSE}
+
+library(tidyverse)
+library(igraph)
+library(readxl)
+svar <- read_xlsx("E:\\Users\\hs\\Dropbox\\diverse\\EM2021\\fasit\\qual.xlsx")
+
+```
+
+
+Well done, everyone!
+
+We have a total of 31 entries in the competition (With a potential late submission due to technical problems).
+
+A quick look on the essentials:
+
+## The Winner
+
+```{r winner, echo=FALSE, message=FALSE , warning=FALSE}
+
+winners_goals <- read_delim("Winners_Goals.csv", col_names = FALSE, delim = ";")
+
+winners <- winners_goals %>% 
+  group_by(X2) %>% 
+  summarise(n=n()) %>% 
+  arrange(n)
+
+ggplot(winners, aes(x = reorder(X2, n), y = n)) +
+  geom_bar(fill = "red", stat = "identity") +
+  theme_light() +
+  coord_flip() +
+  theme(axis.text=element_text(size=18), axis.title=element_text(size=18,face="bold")) +
+  scale_y_continuous(minor_breaks = seq(0,13,1), breaks = seq(0,13,1))  +
+  xlab("Winner") +
+  ylab(" ")
+```
+
+12 of us Holds France to be the winners, with Belgium in second and Italy and England third. Germany, Croatia, Spain and Denmark are outsiders. Not many seem to believe the Home advantage held by England in the finals would be decisive. 
+
+## First Goal
+
+```{r}
+
+
+
+ggplot(svar, aes(x = `Hvilket lag scorer VMs første mål?`)) +
+  geom_bar(fill = "red") +
+  theme_light() +
+  coord_flip() +
+  theme(axis.text=element_text(size=18), axis.title=element_text(size=18,face="bold")) +
+  scale_y_continuous(minor_breaks = seq(0,24,1), breaks = seq(1,24,2))  +
+  xlab(" ") +
+  ylab(" ")
+
+
+```
+The first qualitative points might be awarded tonight. 23 of us believe Italy will score the first goal, whereas 4 posit that the first game will end in a 0-0 draw, and that Belgium in fact will run off with the first goal. 5 persons have predicted Turkey, and among them are individuals with a history of seldom being wrong. 30 points are up for grabs.
+
+## How we compare
+
+The network graph illustrates who have similar predictions. A line between two names means that they are more than 60% similar. Tom Christensen has traditionally been in the middle of this graph, and he has also been a top contender in every competition. On the edges, we find Tor, Marina, Jon and Robert. Jon and Marina share less than 30% of the form. 
+
+```{r intro, echo=FALSE, message=FALSE , warning=FALSE}
+
+
+
+cormat <- tbl_df(read.csv("cormat.csv", sep=";", header = FALSE, stringsAsFactors=FALSE))
+
+cormat$V4 <- ifelse(cormat$V3 > 0.60, 1, 0)
+
+cormat <- rename(cormat, "Korr" = "V3")
+
+el <- cormat %>% filter(V4 == 1) %>% filter(V1 != V2)
+el <- el[1:2]
+
+plot.igraph(graph.edgelist(as.matrix(el)), layout = layout_with_fr(graph.edgelist(as.matrix(el))), vertex.label.cex=1, edge.arrow.size=0) 
+
+```
+
+## How many goals are we likely to see?
+
+```{r, echo=FALSE, message=FALSE , warning=FALSE}
+
+ggplot(winners_goals, aes(x = reorder(X1, X3), y = X3)) +
+  geom_segment(aes(x = reorder(X1, X3), xend = reorder(X1, X3), y=0, yend=X3), color="firebrick") +
+  geom_point(color = "red", size = 4, alpha = 0.8) +
+  theme_light() +
+  coord_flip() +
+  theme(axis.text=element_text(size=18), axis.title=element_text(size=18,face="bold")) +
+  scale_y_continuous(minor_breaks = seq(0,175,25), breaks = seq(0,175,25))  +
+  xlab("Winner") +
+  ylab(" ")
+
+```
+Dagfinn and Jonas believe that this Euro Cup will be the most entertaining ever, with a steady stream of goals never seen before. Jonathan and Philipp predicts less than 100 goals. The Euro 2016 had 108 goals so in light of that we are fairly optimistic as a group
