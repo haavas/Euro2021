@@ -61,7 +61,7 @@ The grey cells in group stage games 25 thorugh 36 and in the knockout rounds are
 
 ##  Points
 
-* Points are awarded for each and every correct answer to the 14 questions. In addition, we calculate the total number of goals scored in the form for a 15th question "How many goals will there be in total?". Each of these questions yield 30 points, for a total of 450 for the questions section
+* Points are awarded for each and every correct answer to the 14 questions. In addition, we calculate the total number of goals scored in the form for a 15th question "How many goals will there be in total? (Penalty shoot-outs excluded)". Each of these questions yield 30 points, for a total of 450 for the questions section
 
 * Points are earned for guessing the correct outcome of each of the games in the group stage. Each correct answer is worth 25 points, for a total of 900 points
 
