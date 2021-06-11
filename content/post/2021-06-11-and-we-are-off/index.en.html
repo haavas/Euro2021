@@ -1,0 +1,54 @@
+---
+title: And we are off!
+author: HS
+date: '2021-06-11'
+slug: and-we-are-off
+categories:
+  - Descriptives
+tags:
+  - Euro2021
+subtitle: ''
+summary: ''
+authors: []
+lastmod: '2021-06-11T11:27:30+02:00'
+featured: no
+image:
+  caption: ''
+  focal_point: ''
+  preview_only: no
+projects: []
+---
+
+
+
+<p>Well done, everyone!</p>
+<p>We have a total of 31 entries in the competition (With a potential late submission due to technical problems).</p>
+<p>A quick look on the essentials:</p>
+<div id="the-winner" class="section level2">
+<h2>The Winner</h2>
+<p><img src="{{< blogdown/postref >}}index.en_files/figure-html/winner-1.png" width="672" /></p>
+<p>12 of us Holds France to be the winners, with Belgium in second and Italy and England third. Germany, Croatia, Spain and Denmark are outsiders. Not many seem to believe the Home advantage held by England in the finals would be decisive.</p>
+</div>
+<div id="first-goal" class="section level2">
+<h2>First Goal</h2>
+<pre class="r"><code>ggplot(svar, aes(x = `Hvilket lag scorer VMs første mål?`)) +
+  geom_bar(fill = &quot;red&quot;) +
+  theme_light() +
+  coord_flip() +
+  theme(axis.text=element_text(size=18), axis.title=element_text(size=18,face=&quot;bold&quot;)) +
+  scale_y_continuous(minor_breaks = seq(0,24,1), breaks = seq(1,24,2))  +
+  xlab(&quot; &quot;) +
+  ylab(&quot; &quot;)</code></pre>
+<p><img src="{{< blogdown/postref >}}index.en_files/figure-html/unnamed-chunk-1-1.png" width="672" />
+The first qualitative points might be awarded tonight. 23 of us believe Italy will score the first goal, whereas 4 posit that the first game will end in a 0-0 draw, and that Belgium in fact will run off with the first goal. 5 persons have predicted Turkey, and among them are individuals with a history of seldom being wrong. 30 points are up for grabs.</p>
+</div>
+<div id="how-we-compare" class="section level2">
+<h2>How we compare</h2>
+<p>The network graph illustrates who have similar predictions. A line between two names means that they are more than 60% similar. Tom Christensen has traditionally been in the middle of this graph, and he has also been a top contender in every competition. On the edges, we find Tor, Marina, Jon and Robert. Jon and Marina share less than 30% of the form.</p>
+<p><img src="{{< blogdown/postref >}}index.en_files/figure-html/intro-1.png" width="672" /></p>
+</div>
+<div id="how-many-goals-are-we-likely-to-see" class="section level2">
+<h2>How many goals are we likely to see?</h2>
+<p><img src="{{< blogdown/postref >}}index.en_files/figure-html/unnamed-chunk-2-1.png" width="672" />
+Dagfinn and Jonas believe that this Euro Cup will be the most entertaining ever, with a steady stream of goals never seen before. Jonathan and Philipp predicts less than 100 goals. The Euro 2016 had 108 goals so in light of that we are fairly optimistic as a group</p>
+</div>
