@@ -33,7 +33,7 @@ Italy beat Turkey in an uninspired game, as opening games often are. Interesting
 
 Turkey was poor in every respect, and as such it is hard to say how good Italy were. We will find out. 
 
-```{r graph, echo = FALSE, warning=FALSE}
+```{r graph, echo = FALSE, warning=FALSE,  fig.height=10, fig.width=10}
 
 nettverk <- read.csv("res1.csv", sep = ";", header = FALSE )
 
