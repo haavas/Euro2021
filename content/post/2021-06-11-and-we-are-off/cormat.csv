@@ -9,7 +9,7 @@ Anne-Kathrin Kreft;Miroslav Nemcok;0.561
 Anne-Kathrin Kreft;Marit Eldholm;0.5385
 Anne-Kathrin Kreft;Øyvind Colbjørnsen;0.595
 Anne-Kathrin Kreft;Håvard Strand;0.6445
-Anne-Kathrin Kreft;Jen Erling Klausen;0.5605
+Anne-Kathrin Kreft;Jan Erling Klausen;0.5605
 Anne-Kathrin Kreft;Jacob Nyrup;0.5295
 Anne-Kathrin Kreft;Jonas Schmid;0.505
 Anne-Kathrin Kreft;Sverke Runde Saxegaard;0.5945
@@ -40,7 +40,7 @@ Dag Harald Claes;Miroslav Nemcok;0.62
 Dag Harald Claes;Marit Eldholm;0.5185
 Dag Harald Claes;Øyvind Colbjørnsen;0.606
 Dag Harald Claes;Håvard Strand;0.6125
-Dag Harald Claes;Jen Erling Klausen;0.479
+Dag Harald Claes;Jan Erling Klausen;0.479
 Dag Harald Claes;Jacob Nyrup;0.5305
 Dag Harald Claes;Jonas Schmid;0.471
 Dag Harald Claes;Sverke Runde Saxegaard;0.562
@@ -71,7 +71,7 @@ Jens Jungblut;Miroslav Nemcok;0.7255
 Jens Jungblut;Marit Eldholm;0.6235
 Jens Jungblut;Øyvind Colbjørnsen;0.606
 Jens Jungblut;Håvard Strand;0.8075
-Jens Jungblut;Jen Erling Klausen;0.6475
+Jens Jungblut;Jan Erling Klausen;0.6475
 Jens Jungblut;Jacob Nyrup;0.6675
 Jens Jungblut;Jonas Schmid;0.6265
 Jens Jungblut;Sverke Runde Saxegaard;0.625
@@ -102,7 +102,7 @@ Jon Hovi;Miroslav Nemcok;0.4735
 Jon Hovi;Marit Eldholm;0.5215
 Jon Hovi;Øyvind Colbjørnsen;0.426
 Jon Hovi;Håvard Strand;0.6075
-Jon Hovi;Jen Erling Klausen;0.449
+Jon Hovi;Jan Erling Klausen;0.449
 Jon Hovi;Jacob Nyrup;0.462
 Jon Hovi;Jonas Schmid;0.41
 Jon Hovi;Sverke Runde Saxegaard;0.408
@@ -133,7 +133,7 @@ Tom Christensen;Miroslav Nemcok;0.723
 Tom Christensen;Marit Eldholm;0.744
 Tom Christensen;Øyvind Colbjørnsen;0.5795
 Tom Christensen;Håvard Strand;0.7855
-Tom Christensen;Jen Erling Klausen;0.584
+Tom Christensen;Jan Erling Klausen;0.584
 Tom Christensen;Jacob Nyrup;0.5825
 Tom Christensen;Jonas Schmid;0.5725
 Tom Christensen;Sverke Runde Saxegaard;0.5755
@@ -164,7 +164,7 @@ Dagfinn Hagen;Miroslav Nemcok;0.596
 Dagfinn Hagen;Marit Eldholm;0.6145
 Dagfinn Hagen;Øyvind Colbjørnsen;0.5205
 Dagfinn Hagen;Håvard Strand;0.6895
-Dagfinn Hagen;Jen Erling Klausen;0.52
+Dagfinn Hagen;Jan Erling Klausen;0.52
 Dagfinn Hagen;Jacob Nyrup;0.554
 Dagfinn Hagen;Jonas Schmid;0.4995
 Dagfinn Hagen;Sverke Runde Saxegaard;0.5015
@@ -195,7 +195,7 @@ Jonathan Kuyper;Miroslav Nemcok;0.6245
 Jonathan Kuyper;Marit Eldholm;0.515
 Jonathan Kuyper;Øyvind Colbjørnsen;0.735
 Jonathan Kuyper;Håvard Strand;0.565
-Jonathan Kuyper;Jen Erling Klausen;0.5175
+Jonathan Kuyper;Jan Erling Klausen;0.5175
 Jonathan Kuyper;Jacob Nyrup;0.5165
 Jonathan Kuyper;Jonas Schmid;0.5165
 Jonathan Kuyper;Sverke Runde Saxegaard;0.5655
@@ -226,7 +226,7 @@ Miroslav Nemcok;Miroslav Nemcok;1.0
 Miroslav Nemcok;Marit Eldholm;0.629
 Miroslav Nemcok;Øyvind Colbjørnsen;0.613
 Miroslav Nemcok;Håvard Strand;0.777
-Miroslav Nemcok;Jen Erling Klausen;0.5245
+Miroslav Nemcok;Jan Erling Klausen;0.5245
 Miroslav Nemcok;Jacob Nyrup;0.576
 Miroslav Nemcok;Jonas Schmid;0.515
 Miroslav Nemcok;Sverke Runde Saxegaard;0.509
@@ -257,7 +257,7 @@ Marit Eldholm;Miroslav Nemcok;0.629
 Marit Eldholm;Marit Eldholm;1.0
 Marit Eldholm;Øyvind Colbjørnsen;0.484
 Marit Eldholm;Håvard Strand;0.67
-Marit Eldholm;Jen Erling Klausen;0.4815
+Marit Eldholm;Jan Erling Klausen;0.4815
 Marit Eldholm;Jacob Nyrup;0.586
 Marit Eldholm;Jonas Schmid;0.4745
 Marit Eldholm;Sverke Runde Saxegaard;0.481
@@ -288,7 +288,7 @@ Marit Eldholm;Sebastian Conte;0.526
 Øyvind Colbjørnsen;Marit Eldholm;0.484
 Øyvind Colbjørnsen;Øyvind Colbjørnsen;1.0
 Øyvind Colbjørnsen;Håvard Strand;0.685
-Øyvind Colbjørnsen;Jen Erling Klausen;0.55
+Øyvind Colbjørnsen;Jan Erling Klausen;0.55
 Øyvind Colbjørnsen;Jacob Nyrup;0.6115
 Øyvind Colbjørnsen;Jonas Schmid;0.556
 Øyvind Colbjørnsen;Sverke Runde Saxegaard;0.549
@@ -319,7 +319,7 @@ Håvard Strand;Miroslav Nemcok;0.777
 Håvard Strand;Marit Eldholm;0.67
 Håvard Strand;Øyvind Colbjørnsen;0.685
 Håvard Strand;Håvard Strand;1.0
-Håvard Strand;Jen Erling Klausen;0.592
+Håvard Strand;Jan Erling Klausen;0.592
 Håvard Strand;Jacob Nyrup;0.6435
 Håvard Strand;Jonas Schmid;0.6045
 Håvard Strand;Sverke Runde Saxegaard;0.603
@@ -339,37 +339,37 @@ Håvard Strand;Kristoffer Kolltveit;0.76
 Håvard Strand;Anna Nordnes Helgøy;0.79
 Håvard Strand;Elin Arntzen;0.788
 Håvard Strand;Sebastian Conte;0.665
-Jen Erling Klausen;Anne-Kathrin Kreft;0.5605
-Jen Erling Klausen;Dag Harald Claes;0.479
-Jen Erling Klausen;Jens Jungblut;0.6475
-Jen Erling Klausen;Jon Hovi;0.449
-Jen Erling Klausen;Tom Christensen;0.584
-Jen Erling Klausen;Dagfinn Hagen;0.52
-Jen Erling Klausen;Jonathan Kuyper;0.5175
-Jen Erling Klausen;Miroslav Nemcok;0.5245
-Jen Erling Klausen;Marit Eldholm;0.4815
-Jen Erling Klausen;Øyvind Colbjørnsen;0.55
-Jen Erling Klausen;Håvard Strand;0.592
-Jen Erling Klausen;Jen Erling Klausen;1.0
-Jen Erling Klausen;Jacob Nyrup;0.55
-Jen Erling Klausen;Jonas Schmid;0.5485
-Jen Erling Klausen;Sverke Runde Saxegaard;0.5385
-Jen Erling Klausen;Linda Gulli;0.603
-Jen Erling Klausen;Marina Povitkina;0.5685
-Jen Erling Klausen;Philipp Broniecki;0.5785
-Jen Erling Klausen;Philipp Lutscher;0.5875
-Jen Erling Klausen;Robert Huseby;0.4915
-Jen Erling Klausen;Scott Gates;0.569
-Jen Erling Klausen;Martin Søyland;0.5515
-Jen Erling Klausen;Leif Erlend Kårtvedt;0.741
-Jen Erling Klausen;Tor Gaute Syrstad;0.471
-Jen Erling Klausen;Øivind Bratberg;0.425
-Jen Erling Klausen;Ida Weseth Bjøru;0.577
-Jen Erling Klausen;Jostein Askim;0.5515
-Jen Erling Klausen;Kristoffer Kolltveit;0.556
-Jen Erling Klausen;Anna Nordnes Helgøy;0.5955
-Jen Erling Klausen;Elin Arntzen;0.6315
-Jen Erling Klausen;Sebastian Conte;0.53
+Jan Erling Klausen;Anne-Kathrin Kreft;0.5605
+Jan Erling Klausen;Dag Harald Claes;0.479
+Jan Erling Klausen;Jens Jungblut;0.6475
+Jan Erling Klausen;Jon Hovi;0.449
+Jan Erling Klausen;Tom Christensen;0.584
+Jan Erling Klausen;Dagfinn Hagen;0.52
+Jan Erling Klausen;Jonathan Kuyper;0.5175
+Jan Erling Klausen;Miroslav Nemcok;0.5245
+Jan Erling Klausen;Marit Eldholm;0.4815
+Jan Erling Klausen;Øyvind Colbjørnsen;0.55
+Jan Erling Klausen;Håvard Strand;0.592
+Jan Erling Klausen;Jan Erling Klausen;1.0
+Jan Erling Klausen;Jacob Nyrup;0.55
+Jan Erling Klausen;Jonas Schmid;0.5485
+Jan Erling Klausen;Sverke Runde Saxegaard;0.5385
+Jan Erling Klausen;Linda Gulli;0.603
+Jan Erling Klausen;Marina Povitkina;0.5685
+Jan Erling Klausen;Philipp Broniecki;0.5785
+Jan Erling Klausen;Philipp Lutscher;0.5875
+Jan Erling Klausen;Robert Huseby;0.4915
+Jan Erling Klausen;Scott Gates;0.569
+Jan Erling Klausen;Martin Søyland;0.5515
+Jan Erling Klausen;Leif Erlend Kårtvedt;0.741
+Jan Erling Klausen;Tor Gaute Syrstad;0.471
+Jan Erling Klausen;Øivind Bratberg;0.425
+Jan Erling Klausen;Ida Weseth Bjøru;0.577
+Jan Erling Klausen;Jostein Askim;0.5515
+Jan Erling Klausen;Kristoffer Kolltveit;0.556
+Jan Erling Klausen;Anna Nordnes Helgøy;0.5955
+Jan Erling Klausen;Elin Arntzen;0.6315
+Jan Erling Klausen;Sebastian Conte;0.53
 Jacob Nyrup;Anne-Kathrin Kreft;0.5295
 Jacob Nyrup;Dag Harald Claes;0.5305
 Jacob Nyrup;Jens Jungblut;0.6675
@@ -381,7 +381,7 @@ Jacob Nyrup;Miroslav Nemcok;0.576
 Jacob Nyrup;Marit Eldholm;0.586
 Jacob Nyrup;Øyvind Colbjørnsen;0.6115
 Jacob Nyrup;Håvard Strand;0.6435
-Jacob Nyrup;Jen Erling Klausen;0.55
+Jacob Nyrup;Jan Erling Klausen;0.55
 Jacob Nyrup;Jacob Nyrup;1.0
 Jacob Nyrup;Jonas Schmid;0.647
 Jacob Nyrup;Sverke Runde Saxegaard;0.5075
@@ -412,7 +412,7 @@ Jonas Schmid;Miroslav Nemcok;0.515
 Jonas Schmid;Marit Eldholm;0.4745
 Jonas Schmid;Øyvind Colbjørnsen;0.556
 Jonas Schmid;Håvard Strand;0.6045
-Jonas Schmid;Jen Erling Klausen;0.5485
+Jonas Schmid;Jan Erling Klausen;0.5485
 Jonas Schmid;Jacob Nyrup;0.647
 Jonas Schmid;Jonas Schmid;1.0
 Jonas Schmid;Sverke Runde Saxegaard;0.521
@@ -443,7 +443,7 @@ Sverke Runde Saxegaard;Miroslav Nemcok;0.509
 Sverke Runde Saxegaard;Marit Eldholm;0.481
 Sverke Runde Saxegaard;Øyvind Colbjørnsen;0.549
 Sverke Runde Saxegaard;Håvard Strand;0.603
-Sverke Runde Saxegaard;Jen Erling Klausen;0.5385
+Sverke Runde Saxegaard;Jan Erling Klausen;0.5385
 Sverke Runde Saxegaard;Jacob Nyrup;0.5075
 Sverke Runde Saxegaard;Jonas Schmid;0.521
 Sverke Runde Saxegaard;Sverke Runde Saxegaard;1.0
@@ -474,7 +474,7 @@ Linda Gulli;Miroslav Nemcok;0.488
 Linda Gulli;Marit Eldholm;0.45
 Linda Gulli;Øyvind Colbjørnsen;0.599
 Linda Gulli;Håvard Strand;0.612
-Linda Gulli;Jen Erling Klausen;0.603
+Linda Gulli;Jan Erling Klausen;0.603
 Linda Gulli;Jacob Nyrup;0.6145
 Linda Gulli;Jonas Schmid;0.5765
 Linda Gulli;Sverke Runde Saxegaard;0.5785
@@ -505,7 +505,7 @@ Marina Povitkina;Miroslav Nemcok;0.521
 Marina Povitkina;Marit Eldholm;0.493
 Marina Povitkina;Øyvind Colbjørnsen;0.6155
 Marina Povitkina;Håvard Strand;0.5225
-Marina Povitkina;Jen Erling Klausen;0.5685
+Marina Povitkina;Jan Erling Klausen;0.5685
 Marina Povitkina;Jacob Nyrup;0.509
 Marina Povitkina;Jonas Schmid;0.499
 Marina Povitkina;Sverke Runde Saxegaard;0.4365
@@ -536,7 +536,7 @@ Philipp Broniecki;Miroslav Nemcok;0.497
 Philipp Broniecki;Marit Eldholm;0.5365
 Philipp Broniecki;Øyvind Colbjørnsen;0.7025
 Philipp Broniecki;Håvard Strand;0.611
-Philipp Broniecki;Jen Erling Klausen;0.5785
+Philipp Broniecki;Jan Erling Klausen;0.5785
 Philipp Broniecki;Jacob Nyrup;0.6235
 Philipp Broniecki;Jonas Schmid;0.5925
 Philipp Broniecki;Sverke Runde Saxegaard;0.5605
@@ -567,7 +567,7 @@ Philipp Lutscher;Miroslav Nemcok;0.5945
 Philipp Lutscher;Marit Eldholm;0.597
 Philipp Lutscher;Øyvind Colbjørnsen;0.7775
 Philipp Lutscher;Håvard Strand;0.6045
-Philipp Lutscher;Jen Erling Klausen;0.5875
+Philipp Lutscher;Jan Erling Klausen;0.5875
 Philipp Lutscher;Jacob Nyrup;0.7025
 Philipp Lutscher;Jonas Schmid;0.577
 Philipp Lutscher;Sverke Runde Saxegaard;0.522
@@ -598,7 +598,7 @@ Robert Huseby;Miroslav Nemcok;0.462
 Robert Huseby;Marit Eldholm;0.501
 Robert Huseby;Øyvind Colbjørnsen;0.4405
 Robert Huseby;Håvard Strand;0.5505
-Robert Huseby;Jen Erling Klausen;0.4915
+Robert Huseby;Jan Erling Klausen;0.4915
 Robert Huseby;Jacob Nyrup;0.548
 Robert Huseby;Jonas Schmid;0.438
 Robert Huseby;Sverke Runde Saxegaard;0.537
@@ -629,7 +629,7 @@ Scott Gates;Miroslav Nemcok;0.548
 Scott Gates;Marit Eldholm;0.548
 Scott Gates;Øyvind Colbjørnsen;0.5535
 Scott Gates;Håvard Strand;0.648
-Scott Gates;Jen Erling Klausen;0.569
+Scott Gates;Jan Erling Klausen;0.569
 Scott Gates;Jacob Nyrup;0.613
 Scott Gates;Jonas Schmid;0.5735
 Scott Gates;Sverke Runde Saxegaard;0.6275
@@ -660,7 +660,7 @@ Martin Søyland;Miroslav Nemcok;0.558
 Martin Søyland;Marit Eldholm;0.561
 Martin Søyland;Øyvind Colbjørnsen;0.536
 Martin Søyland;Håvard Strand;0.626
-Martin Søyland;Jen Erling Klausen;0.5515
+Martin Søyland;Jan Erling Klausen;0.5515
 Martin Søyland;Jacob Nyrup;0.5065
 Martin Søyland;Jonas Schmid;0.492
 Martin Søyland;Sverke Runde Saxegaard;0.545
@@ -691,7 +691,7 @@ Leif Erlend Kårtvedt;Miroslav Nemcok;0.517
 Leif Erlend Kårtvedt;Marit Eldholm;0.5205
 Leif Erlend Kårtvedt;Øyvind Colbjørnsen;0.477
 Leif Erlend Kårtvedt;Håvard Strand;0.6255
-Leif Erlend Kårtvedt;Jen Erling Klausen;0.741
+Leif Erlend Kårtvedt;Jan Erling Klausen;0.741
 Leif Erlend Kårtvedt;Jacob Nyrup;0.509
 Leif Erlend Kårtvedt;Jonas Schmid;0.5225
 Leif Erlend Kårtvedt;Sverke Runde Saxegaard;0.5655
@@ -722,7 +722,7 @@ Tor Gaute Syrstad;Miroslav Nemcok;0.5185
 Tor Gaute Syrstad;Marit Eldholm;0.466
 Tor Gaute Syrstad;Øyvind Colbjørnsen;0.4715
 Tor Gaute Syrstad;Håvard Strand;0.511
-Tor Gaute Syrstad;Jen Erling Klausen;0.471
+Tor Gaute Syrstad;Jan Erling Klausen;0.471
 Tor Gaute Syrstad;Jacob Nyrup;0.5155
 Tor Gaute Syrstad;Jonas Schmid;0.694
 Tor Gaute Syrstad;Sverke Runde Saxegaard;0.4385
@@ -753,7 +753,7 @@ Tor Gaute Syrstad;Sebastian Conte;0.4855
 Øivind Bratberg;Marit Eldholm;0.49
 Øivind Bratberg;Øyvind Colbjørnsen;0.529
 Øivind Bratberg;Håvard Strand;0.565
-Øivind Bratberg;Jen Erling Klausen;0.425
+Øivind Bratberg;Jan Erling Klausen;0.425
 Øivind Bratberg;Jacob Nyrup;0.514
 Øivind Bratberg;Jonas Schmid;0.5715
 Øivind Bratberg;Sverke Runde Saxegaard;0.6155
@@ -784,7 +784,7 @@ Ida Weseth Bjøru;Miroslav Nemcok;0.62
 Ida Weseth Bjøru;Marit Eldholm;0.68
 Ida Weseth Bjøru;Øyvind Colbjørnsen;0.5585
 Ida Weseth Bjøru;Håvard Strand;0.7235
-Ida Weseth Bjøru;Jen Erling Klausen;0.577
+Ida Weseth Bjøru;Jan Erling Klausen;0.577
 Ida Weseth Bjøru;Jacob Nyrup;0.5785
 Ida Weseth Bjøru;Jonas Schmid;0.548
 Ida Weseth Bjøru;Sverke Runde Saxegaard;0.54
@@ -815,7 +815,7 @@ Jostein Askim;Miroslav Nemcok;0.6615
 Jostein Askim;Marit Eldholm;0.66
 Jostein Askim;Øyvind Colbjørnsen;0.519
 Jostein Askim;Håvard Strand;0.718
-Jostein Askim;Jen Erling Klausen;0.5515
+Jostein Askim;Jan Erling Klausen;0.5515
 Jostein Askim;Jacob Nyrup;0.518
 Jostein Askim;Jonas Schmid;0.4825
 Jostein Askim;Sverke Runde Saxegaard;0.4955
@@ -846,7 +846,7 @@ Kristoffer Kolltveit;Miroslav Nemcok;0.644
 Kristoffer Kolltveit;Marit Eldholm;0.675
 Kristoffer Kolltveit;Øyvind Colbjørnsen;0.5595
 Kristoffer Kolltveit;Håvard Strand;0.76
-Kristoffer Kolltveit;Jen Erling Klausen;0.556
+Kristoffer Kolltveit;Jan Erling Klausen;0.556
 Kristoffer Kolltveit;Jacob Nyrup;0.6395
 Kristoffer Kolltveit;Jonas Schmid;0.606
 Kristoffer Kolltveit;Sverke Runde Saxegaard;0.5815
@@ -877,7 +877,7 @@ Anna Nordnes Helgøy;Miroslav Nemcok;0.6935
 Anna Nordnes Helgøy;Marit Eldholm;0.677
 Anna Nordnes Helgøy;Øyvind Colbjørnsen;0.5615
 Anna Nordnes Helgøy;Håvard Strand;0.79
-Anna Nordnes Helgøy;Jen Erling Klausen;0.5955
+Anna Nordnes Helgøy;Jan Erling Klausen;0.5955
 Anna Nordnes Helgøy;Jacob Nyrup;0.5995
 Anna Nordnes Helgøy;Jonas Schmid;0.5585
 Anna Nordnes Helgøy;Sverke Runde Saxegaard;0.537
@@ -908,7 +908,7 @@ Elin Arntzen;Miroslav Nemcok;0.637
 Elin Arntzen;Marit Eldholm;0.6235
 Elin Arntzen;Øyvind Colbjørnsen;0.566
 Elin Arntzen;Håvard Strand;0.788
-Elin Arntzen;Jen Erling Klausen;0.6315
+Elin Arntzen;Jan Erling Klausen;0.6315
 Elin Arntzen;Jacob Nyrup;0.5785
 Elin Arntzen;Jonas Schmid;0.588
 Elin Arntzen;Sverke Runde Saxegaard;0.59
@@ -939,7 +939,7 @@ Sebastian Conte;Miroslav Nemcok;0.5495
 Sebastian Conte;Marit Eldholm;0.526
 Sebastian Conte;Øyvind Colbjørnsen;0.6055
 Sebastian Conte;Håvard Strand;0.665
-Sebastian Conte;Jen Erling Klausen;0.53
+Sebastian Conte;Jan Erling Klausen;0.53
 Sebastian Conte;Jacob Nyrup;0.5955
 Sebastian Conte;Jonas Schmid;0.585
 Sebastian Conte;Sverke Runde Saxegaard;0.6295

@@ -60,7 +60,7 @@ ggplot(winners, aes(x = reorder(X2, n), y = n)) +
 
 ## First Goal
 
-```{r}
+```{r first, echo=FALSE, message=FALSE , warning=FALSE}
 
 
 
@@ -81,7 +81,7 @@ The first qualitative points might be awarded tonight. 23 of us believe Italy wi
 
 The network graph illustrates who have similar predictions. A line between two names means that they are more than 60% similar. Tom Christensen has traditionally been in the middle of this graph, and he has also been a top contender in every competition. On the edges, we find Tor, Marina, Jon and Robert. Jon and Marina share less than 30% of the form. 
 
-```{r intro, echo=FALSE, message=FALSE , warning=FALSE}
+```{r intro, echo=FALSE, message=FALSE , warning=FALSE, fig.height=15, fig.width=15}
 
 
 
