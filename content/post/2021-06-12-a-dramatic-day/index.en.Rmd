@@ -1,0 +1,63 @@
+---
+title: A dramatic day
+author: HS
+date: '2021-06-12'
+slug: a-dramatic-day
+categories:
+  - Game
+tags:
+  - Euro2021
+subtitle: ''
+summary: ''
+authors: []
+lastmod: '2021-06-12T23:58:05+02:00'
+featured: no
+image:
+  caption: ''
+  focal_point: ''
+  preview_only: no
+projects: []
+---
+
+Fortunately, Eriksen seems to have survived what could have been a heart failure. 
+
+```{r init, echo=FALSE, message=FALSE , warning=FALSE}
+
+library(tidyverse)
+library(igraph)
+library(readxl)
+library(knitr)
+
+knitr::opts_chunk$set(out.width = "100%")
+
+```
+
+Denmark lost to Finland, albiet under unforseen circumstances. At least no-one in our competition saw this one coming. In fact, many of us saw Denmark win with many goals. The draw between Wales and Switzerland was more anticipated, and Belgium's win over Russia was almost universally expected. 
+
+```{r graph, echo = FALSE, warning=FALSE,  fig.height=10, fig.width=10}
+
+nettverk <- read.csv("res4.csv", sep = ";", header = FALSE )
+
+leaderboard <- tibble::as_tibble(nettverk)
+
+leaderboard <- leaderboard %>% arrange_at(ncol(.), desc)
+
+hbar<-leaderboard 
+hbar$diff<-hbar$V5-hbar$V2
+
+ggplot(hbar, aes(x=reorder(V1, V5), y=V5, fill = diff )) + 
+    geom_bar(stat = 'identity') + 
+    scale_y_continuous(limits = c(-5, 90)) +
+    coord_flip() + 
+    scale_fill_gradient2(low = "red", high="blue") +
+    geom_text(aes(label = V5), hjust=-0.75, size = 5 ) + 
+    ylab("Points") +
+    xlab(" ") +
+    theme(axis.text=element_text(size=18), axis.title=element_text(size=18,face="bold"))
+
+```
+Martin is in the lead, followed by Øyvind, Philipp B., Øyvind and Scott. Others that did well today were Jostein and Jon, Jonas, and the habitual front-runners Tom and Ida. 
+
+## Top Scorer
+
+Romelu Lukaku is a favourite of many to become top scorer, and with two goals today, he is definately on track.
