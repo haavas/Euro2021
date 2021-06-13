@@ -1,0 +1,67 @@
+---
+title: Sunday, two out of three games and it is time for a Retraction
+author: HS
+date: '2021-06-13'
+slug: sunday-two-out-of-three-games
+categories:
+  - Game
+tags:
+  - Euro2021
+subtitle: ''
+summary: ''
+authors: []
+lastmod: '2021-06-13T20:06:18+02:00'
+featured: no
+image:
+  caption: ''
+  focal_point: ''
+  preview_only: no
+projects: []
+---
+
+
+England won over Croatia, and Austria beat North Macedonia. These two outcomes were not as widely anticipated as we might have guessed, and we are about to have a run-away leader.
+
+
+```{r init, echo=FALSE, message=FALSE , warning=FALSE}
+
+library(tidyverse)
+library(igraph)
+library(readxl)
+library(knitr)
+
+knitr::opts_chunk$set(out.width = "100%")
+
+```
+
+## Retraction
+
+All point calculations hitherto has been wrong, as I had not updated the results modifyer from 20 points to 25 points. These mistakes are correct in this post, but I will not update earlier posts.
+
+```{r graph, echo = FALSE, warning=FALSE,  fig.height=10, fig.width=10}
+
+nettverk <- read.csv("res6.csv", sep = ";", header = FALSE )
+
+leaderboard <- tibble::as_tibble(nettverk)
+
+leaderboard <- leaderboard %>% arrange_at(ncol(.), desc)
+
+hbar<-leaderboard 
+hbar$diff<-hbar$V7-hbar$V5
+
+ggplot(hbar, aes(x=reorder(V1, V7), y=V7, fill = diff )) + 
+    geom_bar(stat = 'identity') + 
+    scale_y_continuous(limits = c(-5, 160)) +
+    coord_flip() + 
+    scale_fill_gradient2(low = "red", high="blue") +
+    geom_text(aes(label = V7), hjust=-0.75, size = 5 ) + 
+    ylab("Points") +
+    xlab(" ") +
+    theme(axis.text=element_text(size=18), axis.title=element_text(size=18,face="bold"))
+
+```
+Martin and Scott are currently leaving the rest behind. Martin has 145 point out of the 180 points awarded so far, which is extremely well done. Scott is trailing by 11 points, which would be enough to secure the top spot in any previous competition. The pursuers are led by a group of 8. Besides Martin, Ida, Robert and Miroslav have done tremendously well so far today. Sverke and Anna have also made much progress in the standings. 
+
+## Top Scorer
+
+Harry Kane did not close the gap to Lukaku today, nor did he score a penalty kick. 
