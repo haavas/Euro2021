@@ -1,0 +1,65 @@
+---
+title: Sunday - Three out of three
+author: HS
+date: '2021-06-13'
+slug: sunday-three-out-of-three
+categories:
+  - Game
+tags:
+  - Euro2021
+subtitle: ''
+summary: ''
+authors: []
+lastmod: '2021-06-13T23:39:15+02:00'
+featured: no
+image:
+  caption: ''
+  focal_point: ''
+  preview_only: no
+projects: []
+---
+
+```{r init, echo=FALSE, message=FALSE , warning=FALSE}
+
+library(tidyverse)
+library(igraph)
+library(readxl)
+library(knitr)
+
+knitr::opts_chunk$set(out.width = "100%")
+
+```
+
+Netherlands beat Ukraine in a five goal stunner. 
+
+
+```{r graph, echo = FALSE, warning=FALSE,  fig.height=10, fig.width=10}
+
+nettverk <- read.csv("res7.csv", sep = ";", header = FALSE )
+
+leaderboard <- tibble::as_tibble(nettverk)
+
+leaderboard <- leaderboard %>% arrange_at(ncol(.), desc)
+
+hbar<-leaderboard 
+hbar$diff<-hbar$V8-hbar$V7
+
+ggplot(hbar, aes(x=reorder(V1, V8), y=V8, fill = diff )) + 
+    geom_bar(stat = 'identity') + 
+    scale_y_continuous(limits = c(-5, 180)) +
+    coord_flip() + 
+    scale_fill_gradient2(low = "red", high="blue") +
+    geom_text(aes(label = V8), hjust=-0.75, size = 5 ) + 
+    ylab("Points") +
+    xlab(" ") +
+    theme(axis.text=element_text(size=18), axis.title=element_text(size=18,face="bold"))
+
+```
+
+What a difference a game can make! Scott is in the lead, and Miroslav made a jump up to second place. The incumbent, Ida, is in third.  All but 7 had the Dutch as winners in this game, but no one had expected as many goals.
+
+## A note on the graph
+
+The numbers in the graph are the number of points each of us have attained so far. The colors represent change from previous update. Deep blue means lots of extra points, whereas red means negative points. 
+
+
