@@ -1,0 +1,62 @@
+---
+title: Spain - Sweden
+author: HS
+date: '2021-06-15'
+slug: spain-sweden
+categories:
+  - Game
+tags:
+  - Euro2021
+subtitle: ''
+summary: ''
+authors: []
+lastmod: '2021-06-15T00:06:20+02:00'
+featured: no
+image:
+  caption: ''
+  focal_point: ''
+  preview_only: no
+projects: []
+---
+
+We did not see that coming, part two.
+
+```{r init, echo=FALSE, message=FALSE , warning=FALSE}
+
+library(tidyverse)
+library(igraph)
+library(readxl)
+library(knitr)
+
+knitr::opts_chunk$set(out.width = "100%")
+
+```
+
+Sweden and Spain produced the first game void of goals, much to our surprise. 
+
+
+```{r graph, echo = FALSE, warning=FALSE,  fig.height=10, fig.width=10}
+
+nettverk <- read.csv("res10.csv", sep = ";", header = FALSE )
+
+leaderboard <- tibble::as_tibble(nettverk)
+
+leaderboard <- leaderboard %>% arrange_at(ncol(.), desc)
+
+hbar<-leaderboard 
+hbar$diff<-hbar$V11-hbar$V10
+
+ggplot(hbar, aes(x=reorder(V1, V11), y=V11, fill = diff )) + 
+    geom_bar(stat = 'identity') + 
+    scale_y_continuous(limits = c(-5, 180)) +
+    coord_flip() + 
+    scale_fill_gradient2(low = "red", high="blue") +
+    geom_text(aes(label = V11), hjust=-0.75, size = 5 ) + 
+    ylab("Points") +
+    xlab(" ") +
+    theme(axis.text=element_text(size=18), axis.title=element_text(size=18,face="bold"))
+
+```
+
+Jon saw this game coming and jumped up many places. Jacob, Marit, Robert, Jostin and Leif Erlend also had the correct outcome, but predicted more goals. Sebastian remain in the lead, but Jacob is now very much within reach.
+
