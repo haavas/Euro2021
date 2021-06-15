@@ -1,0 +1,71 @@
+---
+title: Another sad day for the Anti-Gay movement
+author: HS
+date: '2021-06-15'
+slug: another-sad-day-for-the-anti-gay-movement
+categories:
+  - Game
+tags:
+  - Euro2021
+subtitle: ''
+summary: ''
+authors: []
+lastmod: '2021-06-15T23:33:20+02:00'
+featured: no
+image:
+  caption: ''
+  focal_point: ''
+  preview_only: no
+projects: []
+---
+
+Pride month is visibly present around the world, except in places like Russia and Hungary. But correlation is not causation. 
+
+```{r init, echo=FALSE, message=FALSE , warning=FALSE}
+
+library(tidyverse)
+library(igraph)
+library(readxl)
+library(knitr)
+
+knitr::opts_chunk$set(out.width = "100%")
+
+```
+
+Two games today, a late but brutal display of quality by Portugal against Hungary, and a French victory over Germany. Difficult to see how Hungary can progress from this Group.
+
+Everyone were way above average today, as there are no red colors anywhere. Sebastian and Scott are in the lead, with Ida in third, just in front of Martin and Marina. Jacob, Øyvind and Miroslav were surpassed today, while Dagfinn, Elin, Anna and Anne-Kathrin deserves applause for precision and insight.
+
+
+```{r graph, echo = FALSE, warning=FALSE,  fig.height=10, fig.width=10}
+
+nettverk <- read.csv("res12.csv", sep = ";", header = FALSE )
+
+leaderboard <- tibble::as_tibble(nettverk)
+
+leaderboard <- leaderboard %>% arrange_at(ncol(.), desc)
+
+hbar<-leaderboard 
+hbar$diff<-hbar$V13-hbar$V11
+
+ggplot(hbar, aes(x=reorder(V1, V13), y=V13, fill = diff )) + 
+    geom_bar(stat = 'identity') + 
+    scale_y_continuous(limits = c(0, 250)) +
+    coord_flip() + 
+    scale_fill_gradient2(low = "red", high="blue") +
+    geom_text(aes(label = V13), hjust=-0.75, size = 5 ) + 
+    ylab("Points") +
+    xlab(" ") +
+    theme(axis.text=element_text(size=18), axis.title=element_text(size=18,face="bold"))
+
+```
+
+## Stats
+
+Indeed, Wojciech Szczesny was credited with an own goal. I find this rule strange, but as 2021 goes, it is not particularly peculiar. 
+
+But. Rules have consequences. We are already at three own goals in this championship. The question was whether we believe that there will be more own goals in this championship. Another Hummels to the rescue, and I will distribute points.
+
+Points ready to be distributed are 30 points for answering affarmative that the best European player ever would score in this championship. Ronaldo scored twice today, and points have been included in this update.
+
+Not yet enough goals or yellow cards to discuss, but we do have a red card. Two more to go before we match EURO2016.
