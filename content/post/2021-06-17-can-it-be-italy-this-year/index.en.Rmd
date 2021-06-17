@@ -1,0 +1,60 @@
+---
+title: Can it be Italy this year?
+author: HS
+date: '2021-06-17'
+slug: can-it-be-italy-this-year
+categories:
+  - Game
+tags:
+  - Euro2021
+subtitle: ''
+summary: ''
+authors: []
+lastmod: '2021-06-17T15:13:34+02:00'
+featured: no
+image:
+  caption: ''
+  focal_point: ''
+  preview_only: no
+projects: []
+---
+
+```{r init, echo=FALSE, message=FALSE , warning=FALSE}
+
+library(tidyverse)
+library(igraph)
+library(readxl)
+library(knitr)
+
+knitr::opts_chunk$set(out.width = "100%")
+
+```
+
+Øyvind, Jonathan, Marina, Philipp B and Philipp L. have all Italy as champions. At the moment, this outcome looks quite likely. They are already through to the next round as the first team. 
+
+Yesterday's game was so highly anticipated that it made little impact on the standings. Sebastian widened the gap with two points as he was closer to the result than Scott. 
+
+A special shout out to Tor for getting the result spot on.
+
+```{r graph, echo = FALSE, warning=FALSE,  fig.height=10, fig.width=10}
+
+nettverk <- read.csv("res15.csv", sep = ";", header = FALSE )
+
+leaderboard <- tibble::as_tibble(nettverk)
+
+leaderboard <- leaderboard %>% arrange_at(ncol(.), desc)
+
+hbar<-leaderboard 
+hbar$diff<-hbar$V16-hbar$V15
+
+ggplot(hbar, aes(x=reorder(V1, V16), y=V16, fill = diff )) + 
+    geom_bar(stat = 'identity') + 
+    scale_y_continuous(limits = c(-5, 325)) +
+    coord_flip() + 
+    scale_fill_gradient2(low = "red", high="blue") +
+    geom_text(aes(label = V16), hjust=-0.75, size = 5 ) + 
+    ylab("Points") +
+    xlab(" ") +
+    theme(axis.text=element_text(size=18), axis.title=element_text(size=18,face="bold"))
+
+```
