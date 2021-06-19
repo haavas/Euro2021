@@ -1,0 +1,62 @@
+---
+title: Italy and Wales are through
+author: HS
+date: '2021-06-20'
+slug: italy-and-wales-are-through
+categories:
+  - Game
+tags:
+  - Euro2021
+subtitle: ''
+summary: ''
+authors: []
+lastmod: '2021-06-20T21:39:57+02:00'
+featured: no
+image:
+  caption: ''
+  focal_point: ''
+  preview_only: no
+projects: []
+---
+
+Italy and Wales are through to the knockout stage. Switzerland could go through as one of the better third placed teams. This fact should in a perfect world lead to the distribution of the first points from the knockout stage, but these will have to wait until the conclusion of the group stage. 
+
+```{r init, echo=FALSE, message=FALSE , warning=FALSE}
+
+library(tidyverse)
+library(igraph)
+library(readxl)
+library(knitr)
+
+knitr::opts_chunk$set(out.width = "100%")
+
+```
+
+Sebastian and Scott are now run-away leaders. Sebastian is a stunning 70 points ahead of Jacob. The gap to Scott has increased to 14 points. 
+
+Marina, Jan Erling and Linda deserve praise for an evening well predicted.
+
+The Welsh got a red card, which brings the tally up to two. 
+
+```{r graph, echo = FALSE, warning=FALSE,  fig.height=10, fig.width=10}
+
+nettverk <- read.csv("res26.csv", sep = ";", header = FALSE )
+
+leaderboard <- tibble::as_tibble(nettverk)
+
+leaderboard <- leaderboard %>% arrange_at(ncol(.), desc)
+
+hbar<-leaderboard 
+hbar$diff<-hbar$V27-hbar$V25
+
+ggplot(hbar, aes(x=reorder(V1, V27), y=V27, fill = diff )) + 
+    geom_bar(stat = 'identity') + 
+    scale_y_continuous(limits = c(-5, 460)) +
+    coord_flip() + 
+    scale_fill_gradient2(low = "red", high="blue") +
+    geom_text(aes(label = V27), hjust=-0.75, size = 5 ) + 
+    ylab("Points") +
+    xlab(" ") +
+    theme(axis.text=element_text(size=18), axis.title=element_text(size=18,face="bold"))
+
+```
