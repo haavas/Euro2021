@@ -1,0 +1,63 @@
+---
+title: Sweden does well
+author: ''
+date: '2021-06-19'
+slug: sweden-does-well
+categories: []
+tags: []
+subtitle: ''
+summary: ''
+authors: []
+lastmod: '2021-06-19T01:46:23+02:00'
+featured: no
+image:
+  caption: ''
+  focal_point: ''
+  preview_only: no
+projects: []
+---
+
+Sweden fights off Slovakia, and Isak seems a very likely contender for our breakthrough question.
+
+```{r init, echo=FALSE, message=FALSE , warning=FALSE}
+
+library(tidyverse)
+library(igraph)
+library(readxl)
+library(knitr)
+
+knitr::opts_chunk$set(out.width = "100%")
+
+```
+
+The three games has leveled things out a bit, as both draws were not highly anticipated.
+
+Sebastian remain 11 points ahead of Scott, but the gap has narrowed down as Miroslav and yours truly had a fine string of results this evening. Dag Harald swooped up in the standings as well. 
+
+But, Sebastian remain 89 points ahead of Øyvind in 6th. 
+
+
+```{r graph, echo = FALSE, warning=FALSE,  fig.height=10, fig.width=10}
+
+nettverk <- read.csv("res21.csv", sep = ";", header = FALSE )
+
+leaderboard <- tibble::as_tibble(nettverk)
+
+leaderboard <- leaderboard %>% arrange_at(ncol(.), desc)
+
+hbar<-leaderboard 
+hbar$diff<-hbar$V21-hbar$V18
+
+ggplot(hbar, aes(x=reorder(V1, V21), y=V21, fill = diff )) + 
+    geom_bar(stat = 'identity') + 
+    scale_y_continuous(limits = c(0, 450)) +
+    coord_flip() + 
+    scale_fill_gradient2(low = "red", high="blue") +
+    geom_text(aes(label = V21), hjust=-0.75, size = 5 ) + 
+    ylab("Points") +
+    xlab(" ") +
+    theme(axis.text=element_text(size=18), axis.title=element_text(size=18,face="bold"))
+
+```
+
+In other news, we have a surprising top scorer so far in this championship: Patrik Schick was not mentioned by anyone, not in this competition and not among leading bookmakers. We are at game 21 out of 51, and we have 56 yellow cards so far. At this rate, we will end up with 136 yellow cards, a lot less than the 205 we saw in EURO2016. When Scotland vs England did not produce more than 2 yellow cards, it does not bode well for our joint prediction.
