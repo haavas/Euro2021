@@ -1,0 +1,69 @@
+---
+title: Austria and the Netherlands are through
+author: HS
+date: '2021-06-21'
+slug: austria-and-the-netherlands-are-through
+categories:
+  - Game
+tags:
+  - Euro2021
+subtitle: ''
+summary: ''
+authors: []
+lastmod: '2021-06-21T21:47:29+02:00'
+featured: no
+image:
+  caption: ''
+  focal_point: ''
+  preview_only: no
+projects: []
+---
+
+
+North Macedonia and Ukraine are out.
+
+```{r init, echo=FALSE, message=FALSE , warning=FALSE}
+
+library(tidyverse)
+library(igraph)
+library(readxl)
+library(knitr)
+
+knitr::opts_chunk$set(out.width = "100%")
+
+```
+
+Austria are through, to face everyone's favorites Italy. The Dutch will, at the time of writing, meet Portugal. In their deams, they will meet Hungary, but that looks unlikely. 
+
+```{r graph, echo = FALSE, warning=FALSE,  fig.height=10, fig.width=10}
+
+nettverk <- read.csv("res28.csv", sep = ";", header = FALSE )
+
+leaderboard <- tibble::as_tibble(nettverk)
+
+leaderboard <- leaderboard %>% arrange_at(ncol(.), desc)
+
+hbar<-leaderboard 
+hbar$diff<-hbar$V29-hbar$V27
+
+ggplot(hbar, aes(x=reorder(V1, V29), y=V29, fill = diff )) + 
+    geom_bar(stat = 'identity') + 
+    scale_y_continuous(limits = c(-5, 550)) +
+    coord_flip() + 
+    scale_fill_gradient2(low = "red", high="blue") +
+    geom_text(aes(label = V29), hjust=-0.75, size = 5 ) + 
+    ylab("Points") +
+    xlab(" ") +
+    theme(axis.text=element_text(size=18), axis.title=element_text(size=18,face="bold"))
+
+```
+
+Sebastian is now 10 points ahead of Scott. 10 points. Scott nailed both of these games 100%.
+
+The gap down keeps on growing, as the top pursuers keep on dropping points. 
+
+More to follow shortly.
+
+## Top Scorer
+
+Wijnaldum is co-top scorer with 3 goals. 
