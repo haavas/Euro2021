@@ -1,0 +1,63 @@
+---
+title: Denmark and Belgium is through
+author: HS
+date: '2021-06-21'
+slug: denmark-and-belgium-is-through
+categories:
+  - Game
+tags:
+  - Euro2021
+subtitle: ''
+summary: ''
+authors: []
+lastmod: '2021-06-21T22:55:59+02:00'
+featured: no
+image:
+  caption: ''
+  focal_point: ''
+  preview_only: no
+projects: []
+---
+
+
+```{r init, echo=FALSE, message=FALSE , warning=FALSE}
+
+library(tidyverse)
+library(igraph)
+library(readxl)
+library(knitr)
+
+knitr::opts_chunk$set(out.width = "100%")
+
+```
+
+Denmark made a massive recovery and is through. Belgium is untested in this group. Finland may still survive, Russia is out. 
+
+
+```{r graph, echo = FALSE, warning=FALSE,  fig.height=10, fig.width=10}
+
+nettverk <- read.csv("res30.csv", sep = ";", header = FALSE )
+
+leaderboard <- tibble::as_tibble(nettverk)
+
+leaderboard <- leaderboard %>% arrange_at(ncol(.), desc)
+
+hbar<-leaderboard 
+hbar$diff<-hbar$V31-hbar$V29
+
+ggplot(hbar, aes(x=reorder(V1, V31), y=V31, fill = diff )) + 
+    geom_bar(stat = 'identity') + 
+    scale_y_continuous(limits = c(-5, 555)) +
+    coord_flip() + 
+    scale_fill_gradient2(low = "red", high="blue") +
+    geom_text(aes(label = V31), hjust=-0.75, size = 5 ) + 
+    ylab("Points") +
+    xlab(" ") +
+    theme(axis.text=element_text(size=18), axis.title=element_text(size=18,face="bold"))
+
+```
+Sebastian gained a point on Scott -- the gap is now 11 points. Many did well today, and the standins change very little.
+
+## Top scorer
+
+Lukaku is co-top scorer. This is important, as many of us will receive 30 points if this remains.
