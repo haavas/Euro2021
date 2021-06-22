@@ -1,0 +1,64 @@
+---
+title: Scotland is out
+author: HS
+date: '2021-06-22'
+slug: scotland-is-out
+categories:
+  - Game
+tags:
+  - Euro2021
+subtitle: ''
+summary: ''
+authors: []
+lastmod: '2021-06-22T23:54:51+02:00'
+featured: no
+image:
+  caption: ''
+  focal_point: ''
+  preview_only: no
+projects: []
+---
+
+
+```{r init, echo=FALSE, message=FALSE , warning=FALSE}
+
+library(tidyverse)
+library(igraph)
+library(readxl)
+library(knitr)
+
+knitr::opts_chunk$set(out.width = "100%")
+
+```
+
+Scotland is out, but England, Croatia and the Czech Republic is through from the group of yawn. Someone should investigate the causes for the troublesome English performance before they go through and win it all in a string of 1-0 victories. 
+
+The Croats made it to the finals three years ago, but have failed to impress equally this year. The Czechs have had a string of massive stars over the years, Pavel Nedved being the most prolific perhaps. They lack any such thing this year. But. They are through.
+
+```{r graph, echo = FALSE, warning=FALSE,  fig.height=10, fig.width=10}
+
+nettverk <- read.csv("res32.csv", sep = ";", header = FALSE )
+
+leaderboard <- tibble::as_tibble(nettverk)
+
+leaderboard <- leaderboard %>% arrange_at(ncol(.), desc)
+
+hbar<-leaderboard 
+hbar$diff<-hbar$V33-hbar$V31
+
+ggplot(hbar, aes(x=reorder(V1, V33), y=V33, fill = diff )) + 
+    geom_bar(stat = 'identity') + 
+    scale_y_continuous(limits = c(-5, 615)) +
+    coord_flip() + 
+    scale_fill_gradient2(low = "red", high="blue") +
+    geom_text(aes(label = V33), hjust=-0.75, size = 5 ) + 
+    ylab("Points") +
+    xlab(" ") +
+    theme(axis.text=element_text(size=18), axis.title=element_text(size=18,face="bold"))
+
+```
+Sebastian gained three points on Scott -- the gap is now 14 points. Apart from these two, we should take notice of Tom on his way upwards. Tom is always in the top, and correctly predicting the winner yields 200 point alone, enough to cancel the current gap for a very large group of people. This is still competitive!
+
+## Top scorer
+
+Nothing to report today.
