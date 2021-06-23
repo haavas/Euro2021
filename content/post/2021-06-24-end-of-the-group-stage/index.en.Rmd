@@ -31,7 +31,7 @@ knitr::opts_chunk$set(out.width = "100%")
 ```
 
 
-The group stage is over, and points for the first matches of the knockout stage are distributed. But first, let us review the final games in Group F.
+The group stage is over, and points for the first matches of the knockout stage are distributed. But first, let us review the final games in Group F. 
 
 ```{r graph, echo = FALSE, warning=FALSE,  fig.height=10, fig.width=10}
 
