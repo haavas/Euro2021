@@ -1,5 +1,5 @@
 ---
-title: Almost there
+title: Group stage is over
 author: HS
 date: '2021-06-23'
 slug: almost-there
@@ -19,7 +19,7 @@ image:
 projects: []
 ---
 
-
+For some reason, I'm not allowed to post new updates. Not sure why. The desperate solution is to update this post until further notice.
 
 ```{r init, echo=FALSE, message=FALSE , warning=FALSE}
 
