@@ -2,7 +2,7 @@
 title: test
 author: HS
 date: '2021-06-24'
-slug: test
+slug: Målfest
 categories:
   - Descriptives
 tags:
@@ -19,4 +19,34 @@ image:
 projects: []
 ---
 
-test
+```{r plot}
+library(tidyverse)
+library(haven)
+library(ggplot2)
+library(here)
+
+library(plotly)
+
+data<-read.csv("E:/Users/hs/Dropbox/diverse/EM2021/py/test.csv", fileEncoding = 'utf8')
+
+gg_data <- data %>% 
+  select(-X, -Observed) %>% 
+  mutate(Match = Match -8) %>% 
+  pivot_longer(!Match, names_to = "name", values_to = "Goals")
+
+gg_observed <- data %>% 
+  select(Match, Observed) %>% 
+  mutate(Match = Match -8) %>% 
+  pivot_longer(!Match, names_to = "name", values_to = "Goals")
+
+test <-ggplot(gg_data, aes(x = Match, y = Goals, color = name)) + 
+         geom_line() +
+         geom_line(data = gg_observed, aes(x = Match, y = Goals), color = "Black", size = 3) +
+         theme_light() +
+         theme(legend.position = "none") 
+         
+
+ggplotly(test)
+
+```
+
