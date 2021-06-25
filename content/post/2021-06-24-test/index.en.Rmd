@@ -23,7 +23,7 @@ The group stage is over, and it is time to look at things. First is the number o
 
 In all 36 games together, there has been 94 goals so far. This is the exact number predicted by none. Marit, Øivind, Elin and myself are within the VARgin of error (+/- 3 goals). Our common average is 86, which is not to bad To find yourself, hover over the graph below. 
 
-```{r plot, echo = FALSE, warning=FALSE}
+```{r plot, echo = FALSE, warning=FALSE, message=FALSE }
 library(tidyverse)
 library(haven)
 library(ggplot2)
