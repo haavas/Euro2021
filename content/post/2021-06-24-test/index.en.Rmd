@@ -2,7 +2,7 @@
 title: test
 author: HS
 date: '2021-06-24'
-slug: Målfest
+slug: Goals 
 categories:
   - Descriptives
 tags:
@@ -19,7 +19,11 @@ image:
 projects: []
 ---
 
-```{r plot}
+The group stage is over, and it is time to look at things. First is the number of goals scored so far in this tournament. Where do we stand?
+
+In all 36 games together, there has been 94 goals so far. This is the exact number predicted by none. Marit, Øivind, Elin and myself are within the VARgin of error (+/- 3 goals). Our common average is 86, which is not to bad To find yourself, hover over the graph below. 
+
+```{r plot, echo = FALSE, warning=FALSE}
 library(tidyverse)
 library(haven)
 library(ggplot2)
