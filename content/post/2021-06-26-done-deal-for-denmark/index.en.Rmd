@@ -1,0 +1,71 @@
+---
+title: Done Deal for Denmark
+author: HS
+date: '2021-06-26'
+slug: done-deal-for-denmark
+categories:
+  - Game
+tags:
+  - Euro2021
+subtitle: ''
+summary: ''
+authors: []
+lastmod: '2021-06-26T22:33:49+02:00'
+featured: no
+image:
+  caption: ''
+  focal_point: ''
+  preview_only: no
+projects: []
+---
+
+Denmark is through.
+
+```{r init, echo=FALSE, message=FALSE , warning=FALSE}
+
+library(tidyverse)
+library(igraph)
+library(readxl)
+library(knitr)
+
+knitr::opts_chunk$set(out.width = "100%")
+
+```
+
+Denmark's progress made very little difference. 
+
+```{r knock_37, echo = FALSE, warning=FALSE,  fig.height=10, fig.width=10}
+poeng_prev <- tbl_df(read.csv("details36.csv", sep=";", header = FALSE))
+poeng_prev$total_prev <- poeng_prev$V2 + poeng_prev$V3 + poeng_prev$V4
+poeng_prev <- poeng_prev %>% select(V1, total_prev)
+
+poeng <- tbl_df(read.csv("details37.csv", sep=";", header = FALSE))
+
+poeng$total <- poeng$V2 + poeng$V3 + poeng$V4
+
+poeng <- inner_join(poeng, poeng_prev, by="V1")
+poeng$diff <- poeng$total - poeng$total_prev
+
+poeng <- rename(poeng, V35 = V4)
+poeng <- rename(poeng, V34 = V3)
+poeng <- rename(poeng, V36 = V2)
+poeng$V34 <-poeng$V34 - poeng$diff
+
+
+long_pong <- poeng %>% select(V1, V34, V35, V36, total, diff)  %>% gather(key = V, -V1, -total, value = poeng) %>% arrange(V)
+
+ggplot(data = long_pong, aes(x = reorder(V1, total), y=poeng, fill = V)) + 
+  geom_bar(stat = "identity") +
+  coord_flip() +
+  geom_text(aes(V1, 0, label = total), hjust = -0.50, size = 5) +
+  ylab("Points") +
+  xlab(" ") +
+  scale_fill_manual(values=c("#AAAAAA", "#999999", "#E69F00", "#56B4E9"), 
+                    name="Origin",
+                    breaks=c("V36", "V35", "V34", "diff"),
+                    labels=c("Group Stage", "Qualitative", "Knockout Stage", "Since Last")) +
+  theme(axis.text=element_text(size=18), axis.title=element_text(size=18,face="bold")) +
+  theme(legend.title=element_text(size=18), 
+    legend.text=element_text(size=18))
+
+```
