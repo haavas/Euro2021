@@ -1,0 +1,21 @@
+---
+title: Dutch Disaster and Austrian Angst
+author: HS
+date: '2021-06-28'
+slug: dutch-disaster-and-austrian-angst
+categories:
+  - Game
+tags:
+  - Euro2021
+subtitle: ''
+summary: ''
+authors: []
+lastmod: '2021-06-28T14:33:25+02:00'
+featured: no
+image:
+  caption: ''
+  focal_point: ''
+  preview_only: no
+projects: []
+---
+hgfdsgsfdg
