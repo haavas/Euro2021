@@ -18,12 +18,11 @@ image:
   preview_only: no
 projects: []
 ---
-<<<<<<< HEAD
-
 
 ## Red Cards
 
 > UEFA: This year, we will allow a lot more on the pitch and keep the cards in the pocket.
+
 > Wales: Hold my Seidr...
 
 Yes, we have had four red cards, which is more than in the previous tournament, and points have been distributed.
@@ -83,6 +82,4 @@ ggplot(data = long_pong, aes(x = reorder(V1, total), y=poeng, fill = V)) +
 ```
 
 Sebastian is back in the lead, with 9 points! And the reason is the 30 points from the red card question. Jacob and Robert is in hot pursuit, and both are within the runnaway duo if the right team wins the final. Elin and Jakob deserved particular prasie as they are the only two who have all four qualitative questions correct so far.  
-=======
-hgfdsgsfdg
->>>>>>> 85af9782c2925fefa5f5503ab2002248f2ca7b5d
+
