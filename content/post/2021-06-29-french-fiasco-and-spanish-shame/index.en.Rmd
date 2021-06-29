@@ -1,0 +1,22 @@
+---
+title: French Fiasco and Spanish Shame
+author: HS
+date: '2021-06-29'
+slug: french-fiasco-and-spanish-shame
+categories:
+  - Game
+tags:
+  - Euro2021
+subtitle: ''
+summary: ''
+authors: []
+lastmod: '2021-06-29T11:35:31+02:00'
+featured: no
+image:
+  caption: ''
+  focal_point: ''
+  preview_only: no
+projects: []
+---
+
+Both Spain and France were 3-1 up with little time left. Then something happened.
