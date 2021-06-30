@@ -20,3 +20,60 @@ projects: []
 ---
 
 Sweden has left the tournament at the brink of another penalty shootout. While very sad for the Swedes, this has a two important consequences for us.
+
+Firstly, while we do not yet know how far Denmark will make it, we know that they surpassed Sweden and Finland, as are as such the most successful Nordic team in the cup. This outcome was predicted by a good number of people, and points are awarded accordingly.
+
+Secondly, the Swedish top scorer, by a large margin, is Emil Forsberg. Jostein Askim alone had the analytical skills and deep knowlegde needed to pinpoint what stands out as the most obvious answer to date. Eternal glory and 30 points to him.
+
+
+
+```{r init, echo=FALSE, message=FALSE , warning=FALSE}
+
+library(tidyverse)
+library(igraph)
+library(readxl)
+library(knitr)
+
+knitr::opts_chunk$set(out.width = "100%")
+
+```
+
+
+```{r knock_37, echo = FALSE, warning=FALSE,  fig.height=10, fig.width=10}
+poeng_prev <- tbl_df(read.csv("details43.csv", sep=";", header = FALSE))
+poeng_prev$total_prev <- poeng_prev$V2 + poeng_prev$V3 + poeng_prev$V4
+poeng_prev <- poeng_prev %>% select(V1, total_prev)
+
+poeng <- tbl_df(read.csv("details44.csv", sep=";", header = FALSE))
+
+poeng$total <- poeng$V2 + poeng$V3 + poeng$V4
+
+poeng <- inner_join(poeng, poeng_prev, by="V1")
+poeng$diff <- poeng$total - poeng$total_prev
+
+poeng <- rename(poeng, V35 = V4)
+poeng <- rename(poeng, V34 = V3)
+poeng <- rename(poeng, V36 = V2)
+poeng$V34 <-poeng$V34 - poeng$diff
+
+
+long_pong <- poeng %>% select(V1, V34, V35, V36, total, diff)  %>% gather(key = V, -V1, -total, value = poeng) %>% arrange(V)
+
+ggplot(data = long_pong, aes(x = reorder(V1, total), y=poeng, fill = V)) + 
+  geom_bar(stat = "identity") +
+  coord_flip() +
+  geom_text(aes(V1, 0, label = total), hjust = -0.50, size = 5) +
+  ylab("Points") +
+  xlab(" ") +
+  scale_fill_manual(values=c("#AAAAAA", "#999999", "#E69F00", "#56B4E9"), 
+                    name="Origin",
+                    breaks=c("V36", "V35", "V34", "diff"),
+                    labels=c("Group Stage", "Qualitative", "Knockout Stage", "Since Last")) +
+  theme(axis.text=element_text(size=18), axis.title=element_text(size=18,face="bold")) +
+  theme(legend.title=element_text(size=18), 
+    legend.text=element_text(size=18))
+
+```
+Jostein was in fact alone in predicting Ukraine's win yesterday as well, and he made a massive jump in the standings. Well done!
+
+Since many had Denmark as the top Nordic participant, and few had Ukraine in the Quarter finals, there are few changes in the standings, and none in the top. 
