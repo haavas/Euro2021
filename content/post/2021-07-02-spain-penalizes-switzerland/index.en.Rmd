@@ -1,0 +1,21 @@
+---
+title: 'Spain Penalizes Switzerland '
+author: HS
+date: '2021-07-02'
+slug: spain-penalizes-switzerland
+categories:
+  - Game
+tags:
+  - Euro2021
+subtitle: ''
+summary: ''
+authors: []
+lastmod: '2021-07-02T21:33:18+02:00'
+featured: no
+image:
+  caption: ''
+  focal_point: ''
+  preview_only: no
+projects: []
+---
+Penalty shootouts are won by the initators. 
