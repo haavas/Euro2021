@@ -1,0 +1,22 @@
+---
+title: Is this England's year?
+author: HS
+date: '2021-07-03'
+slug: is-this-england-s-year
+categories:
+  - Game
+tags:
+  - Euro2021
+subtitle: ''
+summary: ''
+authors: []
+lastmod: '2021-07-03T23:26:35+02:00'
+featured: no
+image:
+  caption: ''
+  focal_point: ''
+  preview_only: no
+projects: []
+---
+
+England's defence has so far been watertight, and Pickford is so far the only keeper to keep a clean sheet.
