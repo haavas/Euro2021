@@ -37,7 +37,6 @@ Scott very correctly predicted that the semi final would be Denmark - England, a
 
 There is a sizeable gap down to the rest, but Øivind deserves praise for correctly predicting this semi-final as well.
 
-
 ```{r knock_37, echo = FALSE, warning=FALSE,  fig.height=10, fig.width=10}
 poeng_prev <- tbl_df(read.csv("details46.csv", sep=";", header = FALSE))
 poeng_prev$total_prev <- poeng_prev$V2 + poeng_prev$V3 + poeng_prev$V4

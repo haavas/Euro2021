@@ -1,0 +1,31 @@
+---
+title: Is this England's year?
+author: HS
+date: '2021-07-03'
+slug: is-this-england-s-year
+categories:
+  - Game
+tags:
+  - Euro2021
+subtitle: ''
+summary: ''
+authors: []
+lastmod: '2021-07-03T23:26:35+02:00'
+featured: no
+image:
+  caption: ''
+  focal_point: ''
+  preview_only: no
+projects: []
+---
+
+England's defence has so far been watertight, and Pickford is so far the only keeper to keep a clean sheet. Denmark is the other team in the second semi final, somewthing which is not at all inconsequential for our competition.
+
+
+
+
+Scott very correctly predicted that the semi final would be Denmark - England, and has as such lept above and beyond Sebastian with a 56 point lead. Robert did the very same and is cathcing up fast, but he still has a distance to cover, as he remain 70 points behind Sebastian but only 13 points behind Jacob. Jacob is also catching up with Sebastian. 
+
+There is a sizeable gap down to the rest, but Øivind deserves praise for correctly predicting this semi-final as well.
+
+<img src="index.en_files/figure-html/knock_37-1.png" width="100%" />
