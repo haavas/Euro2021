@@ -72,3 +72,4 @@ ggplot(data = long_pong, aes(x = reorder(V1, total), y=poeng, fill = V)) +
     legend.text=element_text(size=18))
 
 ```
+.
