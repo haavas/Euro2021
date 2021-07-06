@@ -1,0 +1,22 @@
+---
+title: Italy is in the final
+author: HS
+date: '2021-07-07'
+slug: italy-is-in-the-final
+categories:
+  - Game
+tags:
+  - Euro2021
+subtitle: ''
+summary: ''
+authors: []
+lastmod: '2021-07-07T00:15:43+02:00'
+featured: no
+image:
+  caption: ''
+  focal_point: ''
+  preview_only: no
+projects: []
+---
+
+test
