@@ -19,6 +19,17 @@ image:
 projects: []
 ---
 
+```{r init, echo=FALSE, message=FALSE , warning=FALSE}
+
+library(tidyverse)
+library(igraph)
+library(readxl)
+library(knitr)
+
+knitr::opts_chunk$set(out.width = "100%")
+
+```
+
 # The winner is Øyvind Colbjørnsen!
 
 Italy's victory changed quite a lot, and a string of qualitative points provided a solid reshuffle as well. The top three, Øyvind, Philipp L. and Marina, correctly predicted Italy's win. Well done!
